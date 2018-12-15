@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_margin="10dp"
+        android:background="#b4d6f7">
+
+        <ImageView
+            android:id="@+id/column_news_image"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/column_news_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textSize="17sp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_weight="2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="10sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:gravity="left|bottom"
+                android:id="@+id/column_news_details"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/column_news_like"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/like"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
